@@ -8,8 +8,6 @@ function HomePage () {
 
 return (
     <>
-        <main className='home-container'>
-
                     {/* Barra de Navegacion */}
 
         <NavBar />
@@ -111,11 +109,9 @@ return (
         </div>
     </section>
 
-
+    
                         {/* Footer */}
     <Footer />
-
-    </main>
     </>
 
     )
