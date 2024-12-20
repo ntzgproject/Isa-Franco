@@ -1,0 +1,167 @@
+
+#footer-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #CF1721;
+    padding: 20px;
+    position: sticky;
+    height: auto;
+    
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer {
+    width: 450px;
+    padding-top: 60px;
+}
+
+.canales-container {
+    display: flex;
+    width: 600px;
+    gap: 40px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+#redes-title {
+    font-size: 30px;
+    margin-left: 30px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.redes-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.redes-logo:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto-container {
+    display: flex;
+    gap: 20%;
+    padding: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+.contacto-1, .contacto-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+iframe {
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+        border: 0px;
+        border-radius: 10px;
+} 
+
+
+/* Media queries para tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    #footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #CF1721;
+        padding: 20px;
+        position: sticky;
+        height: auto;
+    }
+
+    .logo-footer {
+        width: 100%;
+        max-width: 300px;
+        padding-top: 20px;
+    }
+
+    .canales-container {
+        gap: 30px;
+        
+    }
+
+    .contacto-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .contacto-1, .contacto-2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Media queries para celulares */
+@media (max-width: 599px) {
+
+    #footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #CF1721;
+        padding: 20px;
+        position: sticky;
+        height: auto;
+    }
+    
+    .logo-footer {
+        width: 100%;
+        max-width: 300px;
+        padding-top: 20px;
+    }
+    
+    .canales-container {
+        gap: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 20px 0;
+        padding-top: 30px;
+        
+    }
+
+
+    .contacto-container {
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 0;
+    }
+
+    .contacto-1, .contacto-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    iframe {
+        height: 150px;
+    }
+}
+

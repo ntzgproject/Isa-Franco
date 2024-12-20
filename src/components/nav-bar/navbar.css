@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+                /* Reseteo de estilos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+                /* Contenedor del Navbar */
+
+#navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CF1721;
+    padding: 20px;
+    /* position: sticky; */
+    top: 0;
+    z-index: 999;
+    
+}
+
+
+.logo {
+    width: 160px;
+    margin-left: 30px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+                /* Navegaciones */
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    margin-right: 80px;
+    margin-left: 30px;
+}
+
+#link-drpdwn {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    margin-right: auto;
+}
+
+.link:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+                /* Dropdown */
+
+/* Estilo general del contenedor */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+  /* Estilo del botón */
+.dropbtn {
+    background-color: #CF1721;
+    color: white;
+    padding: 10px 10px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.dropbtn:hover {
+    background-color: #CF1721;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    
+    
+}
+
+  /* Contenedor del contenido desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #CF1721;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+  /* Estilo de los enlaces */
+.dropdown-content a {
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    font-size: px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #e22727;
+    
+}
+
+  /* Mostrar contenido cuando el contenedor tiene hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Media Queries */
+
+/* Pantallas de entre 1120px y 770px */
+@media (max-width: 1120px) and (min-width: 771px) {
+    #navbar-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        width: 140px;
+    }
+
+    .link, .dropbtn {
+        font-size: 22px;
+        margin: 5px 15px;
+    }
+
+    .dropdown-content a {
+        font-size: 18px;
+    }
+}
+
+/* Tablets y dispositivos más pequeños (770px y menos) */
+@media (max-width: 770px) {
+    #navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .link, .dropbtn {
+        font-size: 20px;
+        margin: 5px 0;
+    }
+
+    .dropdown-content a {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+/* Pantallas muy pequeñas (480px y menos) */
+@media (max-width: 480px) {
+    .link, .dropbtn {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .dropdown-content a {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+
+.home-container {
+    width: 100%;
+    height: auto;
+}
+
+                    /* Identidad  */
+
+.section-container-identidad {
+    display: flex; /* Coloca los elementos hijos en una fila */
+    flex-direction: row; /* Asegura disposición horizontal */
+    background-color: beige;
+    width: 100%;
+    height: 90vh;
+    
+
+    background-image: url("../../../public/assets/fondo3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#identidad-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #e7e4e4;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+
+    flex: 1; /* Ocupa la mitad del espacio */
+    margin: 0; /* Remueve márgenes para alineación */
+    padding: 20px;
+    
+}
+
+.title {
+    font-size: 100px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    color: #e7e4e4;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.article-container {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    color: #e7e4e4;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* Ocupa la otra mitad del espacio */
+    overflow: hidden; /* Evita que la imagen se salga del contenedor */
+}
+
+.banner {
+    width: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir sin distorsión */
+}
+
+.botton-history {
+    background-color: #CF1721;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(228, 39, 39, 0.5);
+    border: none;
+    padding: 10px;
+    color: #e7e4e4;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.botton-history:hover {
+    background-color: #e22727;
+}
+
+                    /* Atributos */
+
+    .section-container-motivos {
+        display: block;
+
+        color: #e7e4e4;
+        background-color:white;
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .motivos-container {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos pasen a una nueva línea */
+        gap: 30px; /* Espacio entre las tarjetas */
+        color: #000000;
+        background-color: white;
+        border: none;
+        padding: 20px;
+        padding-bottom: 60px;
+}
+
+    .title-motivos  h1{
+        font-size: 30px;
+        font-style: bold;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        
+        /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+        background-color: white;
+        border: none;
+        padding-top: 40px;
+        color: #d32d2d;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .title-motivos h2 {
+        font-size: 90px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+        background-color: white;
+        border: none;
+        padding: 5px;
+        color:  #030303;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+
+    .motivo {
+        background-color: white;
+        color: black;
+        padding: 10px;
+        width: 90%;
+        height: 60%;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+        transition: transform 0.3s ease;
+
+    }
+
+    .motivo h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        background-color: white;
+        border: none;
+        padding: 10px;
+        color: #000000;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .motivo article {
+        font-size: 23px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        background-color: white;
+        border: none;
+        padding: 10px;
+        color: #000000;
+        font-family: 'Titillium Web', sans-serif;
+    }
+
+
+                    /* Media Queries */
+
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .section-container-identidad {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        height: auto;
+    }
+
+    #identidad-container, 
+    .banner-container {
+        flex: none;
+        width: 100%; /* Ambos elementos ocupan todo el ancho */
+        height: auto;
+        padding: 20px;
+    }
+
+    .banner {
+        height: auto;
+        object-fit: cover;
+    }
+
+    .title {
+        font-size: 50px; /* Reduce tamaño del título */
+    }
+
+    .article-container {
+        font-size: 18px; /* Reduce el tamaño del texto */
+    }
+
+    .motivos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .motivo {
+        width: 90%; /* Ajusta al ancho de pantalla */
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .img-motivos {
+        width: 100%;
+        height: 200px;
+    }
+
+    .title-motivos h1, 
+    .title-motivos h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-container-identidad {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .article-container {
+        font-size: 16px;
+    }
+
+    .motivos-container {
+        gap: 10px;
+    }
+
+    .motivo {
+        width: 100%; /* Toma todo el ancho en móviles */
+        padding: 10px;
+    }
+
+    .img-motivos {
+        width: 100%;
+        height: 150px;
+    }
+
+    .title-motivos h1, 
+    .title-motivos h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .article-container {
+        font-size: 14px;
+    }
+
+    .botton-history {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .motivo {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .motivo h2 {
+        font-size: 24px;
+    }
+
+    .motivo article {
+        font-size: 14px;
+    }
+}
