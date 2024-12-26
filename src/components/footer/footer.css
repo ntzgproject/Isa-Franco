@@ -67,6 +67,11 @@
     gap: 20px;
 }
 
+.contacto {
+    text-decoration: none;
+    color: white;
+}
+
 iframe {
         width: 100%;
         max-width: 300px;

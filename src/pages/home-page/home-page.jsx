@@ -30,7 +30,7 @@ return (
             </div>
 
             <div className='banner-container'>
-            <img src="../../../public/assets/banner2.jpg" alt="Jose" className='banner' /> 
+            <img src="public/assets/banner2.jpg" alt="Jose" className='banner' /> 
             </div>
         </section>
 
@@ -47,7 +47,7 @@ return (
 
         <div className='motivos-container'>
             <div className='motivo'>
-                <img className='img-motivos' src="../../../public/assets/motivo1.jpg" alt="motivo1" />
+                <img className='img-motivos' src="public/assets/motivo1.jpg" alt="motivo1" />
 
                 <h2>Asesoramiento personalizado</h2>
 
@@ -57,7 +57,7 @@ return (
             </div>
 
             <div className='motivo'>
-                <img className='img-motivos' src="../../../public/assets/motivo2.webp" alt="motivo1" />
+                <img className='img-motivos' src="public/assets/motivo2.webp" alt="motivo1" />
 
                 <h2>Entrega Inmediata</h2>
 
@@ -68,7 +68,7 @@ return (
             </div>
 
             <div className='motivo'>
-                <img className='img-motivos' src="../../../public/assets/financiamiento.jpg" alt="motivo1" />
+                <img className='img-motivos' src="public/assets/financiamiento.jpg" alt="motivo1" />
 
                 <h2>El mejor financiamiento</h2>
 
@@ -78,7 +78,7 @@ return (
             </div>
 
             <div className='motivo'>
-                <img className='img-motivos' src="../../../public/assets/accesorios.jpg" alt="motivo1" />
+                <img className='img-motivos' src="public/assets/accesorios.jpg" alt="motivo1" />
 
                 <h2>Accesorios de calidad</h2>
 
@@ -88,7 +88,7 @@ return (
             </div>
 
             <div className='motivo'>
-                <img className='img-motivos' src="../../../public/assets/banner1.jpg" alt="motivo1" />
+                <img className='img-motivos' src="public/assets/banner1.jpg" alt="motivo1" />
 
                 <h2>Servicio tecnico especializado</h2>
 
@@ -98,7 +98,7 @@ return (
             </div>
 
             <div className='motivo'>
-                <img className='img-motivos' src="../../../public/assets/evento.jpg" alt="motivo1" />
+                <img className='img-motivos' src="public/assets/evento.jpg" alt="motivo1" />
 
                 <h2>Eventos Exclusivos</h2>
 

@@ -17,12 +17,11 @@
     align-items: center;
     background-color: #CF1721;
     padding: 20px;
-    /* position: sticky; */
     top: 0;
     z-index: 999;
-    
 }
 
+                /* Logo */
 
 .logo {
     width: 160px;
@@ -67,6 +66,7 @@
 }
 
   /* Estilo del botón */
+
 .dropbtn {
     background-color: #CF1721;
     color: white;
@@ -74,7 +74,6 @@
     font-size: 25px;
     border: none;
     cursor: pointer;
-    
 }
 
 .dropbtn:hover {
@@ -82,8 +81,6 @@
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
     overflow: hidden;
-    
-    
 }
 
   /* Contenedor del contenido desplegable */
@@ -96,7 +93,8 @@
     z-index: 1;
     border-radius: 10px;
     overflow: hidden;
-    
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
 }
 
   /* Estilo de los enlaces */
